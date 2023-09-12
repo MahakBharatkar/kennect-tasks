@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4203a9, #90bafc);
+  color: #fff;
+  padding: 10px;
+}
+
+.prime_calculator {
+  width: 100%;
+  max-width: 600px;
+  margin: 10% 0 0 10%;
+}
+
+.prime_calculator h1 {
+  font-size: 40px;
+}
+
+.prime_calculator h1 span {
+  color: #ffff76;
+}
+
+.input_box {
+  display: flex;
+  margin: 40px 0px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 35px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input_box input {
+  flex: 1;
+  margin-right: 20px;
+  padding: 14px 16px;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.error-message{
+    color: red;
+}
+
+.details-button {
+  background: #ffff76;
+  border: 0;
+  outline: 0;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #333;
+  font-weight: 600;
+}
+
+.input-container{
+    display: flex;
+}
+
+.popup {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 20px;
+    color: #333;
+    min-width: 400px;
+    min-height: 400px;
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+
+.tabcontent {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.cross-btn_container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cross-btn{
+    border: 0;
+    outline: 0;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background: none;
+   cursor: pointer;
+   font-size: 20px;
+   color: #BCBCBC;
+}

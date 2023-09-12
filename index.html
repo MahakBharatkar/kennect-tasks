@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime-Numbers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="prime_calculator">
+        <h1>Prime Number <br /><span>Calculator</span></h1>
+        <div class="input_box">
+          <div class="input-container">
+            <input type="number" id="input1" placeholder="Enter First Number" />
+
+            <input
+              type="number"
+              id="input2"
+              placeholder="Enter Second Number"
+            />
+          </div>
+          <span id="error-message" class="error-message"></span>
+        </div>
+
+        <button class="details-button" onclick="calculatePrime(); showDetails();">Details</button>
+
+        <div>
+          Total Time: <span id="total-time"></span> ms<br />
+          Average Time: <span id="avg-time"></span> ms
+        </div>
+
+        <div id="popup" class="popup">
+          <div class="cross-btn_container">
+            <button class="cross-btn" onclick="hideDetails()">x</button>
+
+          </div>
+          
+          <div class="tabs">
+              <button onclick="showTab(0)">Time per Number</button>
+              <button onclick="showTab(1)">Time per Prime</button>
+          </div>
+          <div id="timePerNumber" class="tabcontent">
+
+              Time per Number
+              <table id="timePerNumberTable">
+                <thead>
+                    <tr>
+                        <th>Number</th>
+                        <th>Time (ms)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+          </div>
+          <div id="timePerPrime" class="tabcontent" style="display: none;">
+              Time per Prime
+
+              <table id="timePerPrimeTable">
+                <thead>
+                    <tr>
+                        <th>Prime Number</th>
+                        <th>Time (ms)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <script src="script.js">
+      // document
+      //   .getElementById("input1")
+      //   .addEventListener("input", validateInputs);
+      // document
+      //   .getElementById("input2")
+      //   .addEventListener("input", validateInputs);
+
+      // function validateInputs() {
+      //   const input1 = document.getElementById("input1");
+      //   const input2 = document.getElementById("input2");
+      //   const errorMessage = document.getElementById("error-message");
+
+      //   if (Number(input1.value) > Number(input2.value)) {
+      //     errorMessage.textContent =
+      //       "First input should not be greater than the second input.";
+      //     input2.setCustomValidity("Invalid value");
+      //   } else {
+      //     errorMessage.textContent = "";
+      //     input2.setCustomValidity("");
+      //   }
+      // }
+      
+    </script>
+  </body>
+</html>
